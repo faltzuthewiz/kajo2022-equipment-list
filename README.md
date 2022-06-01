@@ -1,0 +1,1 @@
+# kajo2022-equipment-list
