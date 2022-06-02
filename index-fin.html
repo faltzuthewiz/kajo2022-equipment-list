@@ -14,6 +14,7 @@
         </details>
         <details>
             <summary>Ensikertalaisen TOP 10 suurleirille</summary>
+            <div>
                 <ol>
                     <li>Varustelistaa kannattaa noudattaa, sen ovat kirjoittaneet suurleirikonkarit.</li>
                     <li>Leirille kannattaa pakata hyvät kengät, sillä kävelyä leirialueella tulee paljon! Leirialue on iso, ja välimatkat voivat olla pitkiä.</li>
@@ -26,6 +27,7 @@
                     <li>Kajolla kannattaa pitää silmät ja korvat auki. Monenlaista tapahtumaa on koko ajan käynnissä ympäri leirialuetta.</li>
                     <li>Nauti Kajosta! Suurleirejä ei ole kuitenkaan joka vuosi, joten muista myös pitää hauskaa ja nauttia matkasta.</li>
                 </ol>
+            </div>
         </details>
         <details>
             <summary>Varustelistan käyttöohjeet</summary>
@@ -53,7 +55,7 @@
         </form>
 
         <h3>Vaatteet ja asusteet</h3>
-        <div>Varaudu kylmään, sateeseen ja helteeseen. Vaatteiden pesuun ei leirillä ole mahdollisuutta.</div>
+        <div class="infobox">Varaudu kylmään, sateeseen ja helteeseen. Vaatteiden pesuun ei leirillä ole mahdollisuutta.</div>
         <form>
             <input type="checkbox" class="EQUIP-check" value="006">
             <label for="060">Päähine ja pipo</label>
@@ -111,9 +113,9 @@
             <input type="checkbox" class="EQUIP-check" value="022">
             <label for="022">Makuupussi</label>
             <br>
-            <input type="checkbox" class="EQUIP-check" value="023">
-            <label for="023">Makuupussin sisälakana halutessasi</label>
-            <br>
+                <div class="tab"><input type="checkbox" class="EQUIP-check" value="023">
+                <label for="023">Makuupussin sisälakana halutessasi</label>
+                <br></div>
             <input type="checkbox" class="EQUIP-check" value="024">
             <label for="024">Makuualusta</label>
             <br>
@@ -187,7 +189,7 @@
             <input type="checkbox" class="EQUIP-check" value="043">
             <label for="043">Pesupussi (kankainen), jossa:</label>
             <br>
-                <input type="checkbox" class="EQUIP-check" value="044">
+                <div class="tab"><input type="checkbox" class="EQUIP-check" value="044">
                 <label for="044">Hammasharja</label>
                 <br>
                 <input type="checkbox" class="EQUIP-check" value="045">
@@ -202,6 +204,7 @@
                 <input type="checkbox" class="EQUIP-check" value="048">
                 <label for="048">Muut haluamasi peseytymistarvikkeet</label>
                 <br>
+                </div>
             <input type="checkbox" class="EQUIP-check" value="049">
             <label for="049">Kampa tai hiusharja</label>
             <br>
@@ -232,9 +235,10 @@
             <input type="checkbox" class="EQUIP-check" value="058">
             <label for="058">Henkilökohtaiset lääkkeet (astma- ja allergialääkkeet, insuliini ja migreenilääkkeet)</label>
             <br>
-                <input type="checkbox" class="EQUIP-check" value="059">
+                <div class="tab"><input type="checkbox" class="EQUIP-check" value="059">
                 <label for="059">Särkylääke, jota olet tottunut käyttämään (esim. ibuprofeeni, parasetamoli)</label>
                 <br>
+                </div>
             <input type="checkbox" class="EQUIP-check" value="060">
             <label for="060">Perusvoide</label>
             <br>
@@ -261,10 +265,12 @@
             <br>
         </form>
 
-        <div>
-            <h3>Henkilökohtainen lääkesalkku</h3>
+        <details class="laake">
+            <summary>Henkilökohtainen lääkesalkku</summary>
             <p>Merkitse henkilökohtaiset lääkkeet hyvin ja ota mukaan ohjeistus siitä, miten niitä käytetään (annostus). Kylmäsäilytystä vaativat lääkkeet tulee tuoda lähimmälle ensiapupisteelle jääkaappiin säilytettäväksi heti leirialueelle saavuttaessa. Pakkaa lääkkeet esimerkiksi suljettavaan muovipussiin ja merkitse pussi omalla sekä leirilippukuntasi nimellä. Liitä mukaan ohjeistus annostuksesta ja antotavasta. </p>
-        </div>
+        </details>
+
+        <button>Tallenna</button>
 
         <h3>Yleistavaroita</h3>
         <form>
@@ -326,6 +332,7 @@
         </form>
 
         <button>Tallenna</button>
+        <div class="infobox">Muista tarkistaa lopuksi, että kaikki tarvittava on varmasti mukana!</div>
 
     </body>
 
