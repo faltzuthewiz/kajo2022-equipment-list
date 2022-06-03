@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="load_()">
         <h1>Varustelista</h1>
 
         <details>
@@ -105,7 +105,7 @@
             <label for="021">Sandaalit tai vastaavat suihkussa käyntiin</label>
             <br>
         </form>
-        <button>Tallenna</button>
+        <button class="savebtn" onclick="save()">Tallenna</button>
 
         <h3>Yöpymisvarusteet</h3>
         <form>
@@ -175,7 +175,7 @@
             <label for="040">Kompassi</label>
             <br>
         </form>
-        <button>Tallenna</button>
+        <button class="savebtn" onclick="save()">Tallenna</button>
 
         <h3>Peseytymisvälineet ja hygienia</h3>
         <form>
@@ -269,7 +269,7 @@
             <p>Merkitse henkilökohtaiset lääkkeet hyvin ja ota mukaan ohjeistus siitä, miten niitä käytetään (annostus). Kylmäsäilytystä vaativat lääkkeet tulee tuoda lähimmälle ensiapupisteelle jääkaappiin säilytettäväksi heti leirialueelle saavuttaessa. Pakkaa lääkkeet esimerkiksi suljettavaan muovipussiin ja merkitse pussi omalla sekä leirilippukuntasi nimellä. Liitä mukaan ohjeistus annostuksesta ja antotavasta. </p>
         </details>
 
-        <button>Tallenna</button>
+        <button class="savebtn" onclick="save()">Tallenna</button>
 
         <h3>Yleistavaroita</h3>
         <form>
@@ -330,8 +330,10 @@
             <br>
         </form>
 
-        <button>Tallenna</button>
+        <button class="savebtn" onclick="save()">Tallenna</button>
         <div class="infobox">Muista tarkistaa, että kaikki tarvittava on varmasti mukana!</div>
+
+        <script src="equipment_list.js"></script>
 
     </body>
 
